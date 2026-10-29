@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "serein"
+version = "0.1.0"
+description = "A small, local Chinese emotional-support chat prototype"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi==0.121.3",
+  "gradio==5.45.0",
+  "openai==1.109.1",
+  "python-dotenv==0.21.0",
+  "uvicorn==0.38.0",
+  "httpx==0.28.1",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7.4,<9", "httpx==0.28.1"]
+
+[project.scripts]
+serein = "serein.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["serein*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

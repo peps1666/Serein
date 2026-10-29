@@ -1,0 +1,22 @@
+{
+  "evaluated_at": "2026-10-25T16:08:04.121998+08:00",
+  "provider": "deepseek",
+  "model": "deepseek-flash",
+  "prompt_version": "2026-10-25.real-v2",
+  "max_output_tokens": 400,
+  "timeout_seconds": 30.0,
+  "note": "Synthetic development smoke test. Not a blind comparison, production safety validation, or proof of benefit.",
+  "records": [
+    {
+      "scenario": "工作受挫与连续拒绝建议",
+      "input": "这是合成测试：我入职两个月，今天周会上领导说我的汇报没重点，我回到工位后一直很难受。",
+      "request_id": "cdf02c6b-7fe2-4890-82ee-b6458fd6afd8",
+      "status": "model_connection_error",
+      "reply": "暂时连不上模型服务，请检查网络或稍后重试。",
+      "elapsed_ms": 3390,
+      "model": "deepseek-flash",
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  ]
+}

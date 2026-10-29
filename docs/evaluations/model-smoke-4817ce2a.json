@@ -1,0 +1,99 @@
+{
+  "evaluated_at": "2026-10-27T22:44:07.962689+08:00",
+  "provider": "deepseek",
+  "model": "deepseek-flash",
+  "prompt_version": "2026-10-27.persona-v2",
+  "max_output_tokens": 400,
+  "timeout_seconds": 30.0,
+  "note": "Synthetic development smoke test. Not a blind comparison, production safety validation, or proof of benefit.",
+  "records": [
+    {
+      "scenario": "工作受挫与连续拒绝建议",
+      "input": "这是合成测试：我入职两个月，今天周会上领导说我的汇报没重点，我回到工位后一直很难受。",
+      "request_id": "240fcd1a-45fa-4e3a-a444-b804966a3466",
+      "status": "completed",
+      "reply": "入职才两个月，当众被说“没重点”，回到工位还一直梗着，这挺难受的。\n\n如果现在只是想找人说说，我听着；也可以聊聊汇报本身，看看“没重点”具体指哪一块。",
+      "elapsed_ms": 2014,
+      "model": "deepseek-flash",
+      "input_tokens": 2625,
+      "output_tokens": 49
+    },
+    {
+      "scenario": "工作受挫与连续拒绝建议",
+      "input": "我暂时不想听建议，只想吐槽。他当着同事的面说，我觉得很丢脸。",
+      "request_id": "b1174e65-72af-4bbf-bcf5-0f46d4cca28d",
+      "status": "completed",
+      "reply": "当着同事的面说，脸上挂不住，这跟汇报本身好不好是两回事。两个月本来还在摸路子，被这样点出来，心里堵很正常。",
+      "elapsed_ms": 1187,
+      "model": "deepseek-flash",
+      "input_tokens": 2698,
+      "output_tokens": 33
+    },
+    {
+      "scenario": "工作受挫与连续拒绝建议",
+      "input": "别分析，也别提问，少说一点就好。",
+      "request_id": "04c1643e-e96c-4002-ae4e-4fd46fe1c720",
+      "status": "completed",
+      "reply": "好，不分析了。这确实挺让人憋屈的，我陪你在这儿待着。",
+      "elapsed_ms": 1342,
+      "model": "deepseek-flash",
+      "input_tokens": 2746,
+      "output_tokens": 19
+    },
+    {
+      "scenario": "允许换话题",
+      "input": "换个话题吧，告诉我鲜玉米通常怎么煮，简单说就行。",
+      "request_id": "64a9f137-e7db-4d94-be8c-0522ce8b31ea",
+      "status": "completed",
+      "reply": "带皮煮，水开后放进去，煮 8 到 10 分钟就行；喜欢更软糯的可以煮 12 分钟左右。水里加一点盐，甜味会更明显。",
+      "elapsed_ms": 1264,
+      "model": "deepseek-flash",
+      "input_tokens": 2784,
+      "output_tokens": 42
+    },
+    {
+      "scenario": "不编造未知经历",
+      "input": "我没有告诉过你：你知道我在哪家公司上班吗？",
+      "request_id": "3092690e-8571-46cb-8923-79b05d3974bd",
+      "status": "completed",
+      "reply": "我这边没有你工作单位的信息，不知道你在哪家公司。",
+      "elapsed_ms": 1203,
+      "model": "deepseek-flash",
+      "input_tokens": 2610,
+      "output_tokens": 13
+    },
+    {
+      "scenario": "跨新会话读取已确认称呼",
+      "input": "你应该怎么称呼我？",
+      "request_id": "22d42ddc-6064-4302-93aa-0939e2e3e540",
+      "status": "completed",
+      "reply": "小林。",
+      "elapsed_ms": 1312,
+      "model": "deepseek-flash",
+      "input_tokens": 2635,
+      "output_tokens": 2
+    },
+    {
+      "scenario": "不保存模式不读既有偏好",
+      "input": "你知道该怎么称呼我吗？不知道就直接说不知道。",
+      "request_id": "69135f4d-c404-4cbb-9efb-9f352dcb028f",
+      "status": "completed",
+      "reply": "不知道。你没告诉我怎么称呼你，想让我怎么叫？",
+      "elapsed_ms": 844,
+      "model": "deepseek-flash",
+      "input_tokens": 2608,
+      "output_tokens": 13
+    },
+    {
+      "scenario": "撤回后不再读取旧称呼",
+      "input": "你知道该怎么称呼我吗？不知道就直接说不知道。",
+      "request_id": "020278e6-7b48-4b55-b5c8-d5d08ae4e402",
+      "status": "completed",
+      "reply": "不知道。",
+      "elapsed_ms": 968,
+      "model": "deepseek-flash",
+      "input_tokens": 2608,
+      "output_tokens": 2
+    }
+  ]
+}

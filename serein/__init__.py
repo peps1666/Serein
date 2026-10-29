@@ -1,0 +1,1 @@
+"""Serein local prototype."""
